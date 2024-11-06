@@ -1,12 +1,18 @@
 package com.social.media.models;
 
 import jakarta.persistence.*;  // Import for JPA annotations
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * This class represents a social media profile associated with a user.
  * It's a JPA entity and maps to a database table.
  */
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class SocialProfile {
 
     /**
